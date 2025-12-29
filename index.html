@@ -394,31 +394,16 @@
             display: inline-block;
         }
 
-@media (max-width: 480px) {
-    .cover-content { 
-        width: 260px; /* Slightly larger circle on mobile */
-        height: 260px; 
-        padding: 20px; 
-    }
-    .cover-content h2.script { font-size: 2.2rem !important; }
-    
-    .card, .extra-section { 
-        width: 96%; /* Uses almost the full width of the phone screen */
-        border-left: 6px solid var(--light-blue); /* Thinner borders to save space */
-        border-right: 6px solid var(--light-blue);
-        border-radius: 25px; /* Softer corners for mobile */
-    }
-
-    .content-padding { 
-        padding: 40px 15px 80px 15px !important; /* Reduced side padding so text can spread out */
-    }
-
-    .names.script { font-size: 2.5rem !important; }
-    .big-number { font-size: 2.8rem; padding: 0 10px; }
-    
-    /* This allows your grids (Entourage) to use the full width */
-    .entourage-name { font-size: 0.9rem; } 
-}
+        @media (max-width: 480px) {
+            .cover-content { width: 270px; height: 270px; padding: 25px; }
+            .cover-content h2.script { font-size: 2.2rem !important; }
+            .cover-content h1 { font-size: 0.9rem !important; }
+            .card, .extra-section { width: 92%; }
+            .names.script { font-size: 2.2rem !important; margin-top: 30px !important; }
+            .big-number { font-size: 2.5rem; padding: 0 10px; }
+            #nav-bar { width: 95%; padding: 10px 5px; }
+            .nav-btn { font-size: 0.55rem; padding: 8px 6px; }
+        }
 
         .opened .left-curtain { transform: translateX(-105%); }
         .opened .right-curtain { transform: translateX(105%); }
@@ -793,4 +778,5 @@ setInterval(updateCountdown, 1000);
 </body>
 
 </html>
+
 
